@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir páginas</title>
+    <script>
+        function openLinks() {
+            const urls = [
+                "https://es.tradingview.com/chart/W1dQPJeC/?symbol=OANDA%3AEURUSD",
+                "https://es.tradingview.com/chart/W1dQPJeC/?symbol=OANDA%3AAUDUSD",
+                "https://trader.ftmo.com/accounts-overview?",
+                "https://www.forexfactory.com/calendar?day=today",
+            ];
+            urls.forEach(url => window.open(url, '_blank'));
+        }
+    </script>
+</head>
+<body>
+    <button onclick="openLinks()">Abrir páginas</button>
+</body>
+</html>
