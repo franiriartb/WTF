@@ -1,42 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Enlaces de Trading</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            color: #0078d7;
-        }
-        a {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 25px;
-            background-color: #0078d7;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-        }
-        a:hover {
-            background-color: #005bb5;
-        }
-    </style>
+    <title>Redirección Automática</title>
+    <script>
+        window.onload = function() {
+            const urls = [
+                "https://es.tradingview.com/chart/W1dQPJeC/?symbol=OANDA%3AEURUSD",
+                "https://es.tradingview.com/chart/W1dQPJeC/?symbol=OANDA%3AAUDUSD",
+                "https://trader.ftmo.com/accounts-overview?",
+                "https://www.forexfactory.com/calendar?day=today"
+            ];
+
+            urls.forEach(url => {
+                window.open(url, '_blank');
+            });
+        };
+    </script>
 </head>
 <body>
-    <h1>Mis Herramientas de Trading</h1>
-    <p>Haz clic en los enlaces para abrir las páginas de herramientas.</p>
-
-    <a href="https://es.tradingview.com/chart/W1dQPJeC/?symbol=OANDA%3AEURUSD" target="_blank">TradingView - EUR/USD</a>
-    <a href="https://es.tradingview.com/chart/W1dQPJeC/?symbol=OANDA%3AAUDUSD" target="_blank">TradingView - AUD/USD</a>
-    <a href="https://trader.ftmo.com/accounts-overview?" target="_blank">FTMO Accounts</a>
-    <a href="https://www.forexfactory.com/calendar?day=today" target="_blank">Forex Factory Calendar</a>
+    <h1>Redirigiendo a tus páginas...</h1>
 </body>
 </html>
