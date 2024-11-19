@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abrir páginas</title>
-    <script>
-        function openLinks() {
-            const urls = [
-                "https://es.tradingview.com/chart/W1dQPJeC/?symbol=OANDA%3AEURUSD",
-                "https://es.tradingview.com/chart/W1dQPJeC/?symbol=OANDA%3AAUDUSD",
-                "https://trader.ftmo.com/accounts-overview?",
-                "https://www.forexfactory.com/calendar?day=today",
-            ];
-            urls.forEach(url => window.open(url, '_blank'));
+    <title>Mis Enlaces de Trading</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            padding: 20px;
         }
-    </script>
+        h1 {
+            color: #0078d7;
+        }
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            background-color: #0078d7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        a:hover {
+            background-color: #005bb5;
+        }
+    </style>
 </head>
 <body>
-    <button onclick="openLinks()">Abrir páginas</button>
+    <h1>Mis Herramientas de Trading</h1>
+    <p>Haz clic en los enlaces para abrir las páginas de herramientas.</p>
+
+    <a href="https://es.tradingview.com/chart/W1dQPJeC/?symbol=OANDA%3AEURUSD" target="_blank">TradingView - EUR/USD</a>
+    <a href="https://es.tradingview.com/chart/W1dQPJeC/?symbol=OANDA%3AAUDUSD" target="_blank">TradingView - AUD/USD</a>
+    <a href="https://trader.ftmo.com/accounts-overview?" target="_blank">FTMO Accounts</a>
+    <a href="https://www.forexfactory.com/calendar?day=today" target="_blank">Forex Factory Calendar</a>
 </body>
 </html>
